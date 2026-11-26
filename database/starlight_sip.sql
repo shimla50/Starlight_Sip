@@ -87,7 +87,7 @@ CREATE TABLE `complaints` (
 --
 
 INSERT INTO `complaints` (`id`, `name`, `complaint`, `created_at`) VALUES
-(1, 'rojin', 'onek complaint\r\n', '2025-05-09 12:43:42');
+(1, 'Guest A', 'Sample complaint', '2025-05-09 12:43:42');
 
 -- --------------------------------------------------------
 
@@ -150,20 +150,20 @@ CREATE TABLE `orders` (
 --
 
 INSERT INTO `orders` (`id`, `user_email`, `total_amount`, `status`, `payment_method`, `transaction_id`, `created_at`) VALUES
-(1, 'shimlaakter763@gmail.com', 400.00, 'pending', NULL, NULL, '2025-05-08 17:50:29'),
-(2, 'shimlaakter763@gmail.com', 2100.00, 'pending', NULL, NULL, '2025-05-08 17:55:42'),
-(3, 'shimlaakter763@gmail.com', 1270.00, 'pending', NULL, NULL, '2025-05-08 17:57:49'),
-(4, 'shimlaakter763@gmail.com', 280.00, 'pending', NULL, NULL, '2025-05-08 18:00:40'),
-(5, 'shimlaakter763@gmail.com', 480.00, 'pending', NULL, NULL, '2025-05-08 18:16:39'),
-(6, 'shimlaakter763@gmail.com', 320.00, 'pending', NULL, NULL, '2025-05-08 18:18:22'),
-(7, 'shimlaakter763@gmail.com', 320.00, 'pending', NULL, NULL, '2025-05-08 18:21:52'),
-(8, 'mimsamia476@gmail.com', 880.00, 'pending', NULL, NULL, '2025-05-09 09:37:19'),
-(9, 'mimsamia476@gmail.com', 320.00, 'pending', NULL, NULL, '2025-05-09 09:37:32'),
-(10, 'mimsamia476@gmail.com', 800.00, 'pending', NULL, NULL, '2025-05-09 15:16:22'),
-(11, 'mimsamia476@gmail.com', 1320.00, 'pending', NULL, NULL, '2025-05-09 15:17:11'),
-(12, 'mimsamia476@gmail.com', 200.00, 'pending', NULL, NULL, '2025-05-09 17:46:16'),
-(13, 'mimsamia476@gmail.com', 1360.00, 'pending', NULL, NULL, '2025-05-09 18:17:34'),
-(14, 'mimsamia476@gmail.com', 1430.00, 'pending', NULL, NULL, '2025-05-10 13:00:12');
+(1, 'demo1@example.com', 400.00, 'pending', NULL, NULL, '2025-05-08 17:50:29'),
+(2, 'demo1@example.com', 2100.00, 'pending', NULL, NULL, '2025-05-08 17:55:42'),
+(3, 'demo1@example.com', 1270.00, 'pending', NULL, NULL, '2025-05-08 17:57:49'),
+(4, 'demo1@example.com', 280.00, 'pending', NULL, NULL, '2025-05-08 18:00:40'),
+(5, 'demo1@example.com', 480.00, 'pending', NULL, NULL, '2025-05-08 18:16:39'),
+(6, 'demo1@example.com', 320.00, 'pending', NULL, NULL, '2025-05-08 18:18:22'),
+(7, 'demo1@example.com', 320.00, 'pending', NULL, NULL, '2025-05-08 18:21:52'),
+(8, 'demo3@example.com', 880.00, 'pending', NULL, NULL, '2025-05-09 09:37:19'),
+(9, 'demo3@example.com', 320.00, 'pending', NULL, NULL, '2025-05-09 09:37:32'),
+(10, 'demo3@example.com', 800.00, 'pending', NULL, NULL, '2025-05-09 15:16:22'),
+(11, 'demo3@example.com', 1320.00, 'pending', NULL, NULL, '2025-05-09 15:17:11'),
+(12, 'demo3@example.com', 200.00, 'pending', NULL, NULL, '2025-05-09 17:46:16'),
+(13, 'demo3@example.com', 1360.00, 'pending', NULL, NULL, '2025-05-09 18:17:34'),
+(14, 'demo3@example.com', 1430.00, 'pending', NULL, NULL, '2025-05-10 13:00:12');
 
 -- --------------------------------------------------------
 
@@ -232,9 +232,9 @@ CREATE TABLE `reviews` (
 --
 
 INSERT INTO `reviews` (`id`, `name`, `rating`, `comment`, `created_at`) VALUES
-(1, 'rifot', 3, 'jnkjdsV', '2025-05-09 12:06:30'),
-(2, 'rifot', 2, 'knkndsv', '2025-05-09 12:06:38'),
-(3, 'Prova', 4, 'Nice Environment ', '2025-05-10 13:05:53');
+(1, 'Guest B', 3, 'Sample review', '2025-05-09 12:06:30'),
+(2, 'Guest B', 2, 'Sample review', '2025-05-09 12:06:38'),
+(3, 'Guest C', 4, 'Nice Environment ', '2025-05-10 13:05:53');
 
 -- --------------------------------------------------------
 
@@ -280,9 +280,9 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `firstName`, `lastName`, `email`, `password`) VALUES
-(1, 'Shimla', 'Aktar', 'shimlaakter763@gmail.com', 'd41d8cd98f00b204e9800998ecf8427e'),
-(2, 'Mim', 'Samia', 'mimsamia@gmail.com', 'e10adc3949ba59abbe56e057f20f883e'),
-(3, 'Mim', 'Samia', 'mimsamia476@gmail.com', '4de35585e43001e7436de75dae44b67f');
+(1, 'Demo', 'User1', 'demo1@example.com', '6e9bece1914809fb8493146417e722f6'),
+(2, 'Demo', 'User2', 'demo2@example.com', '6e9bece1914809fb8493146417e722f6'),
+(3, 'Demo', 'User3', 'demo3@example.com', '6e9bece1914809fb8493146417e722f6');
 
 --
 -- Indexes for dumped tables
